@@ -4,11 +4,30 @@
 
 {% block post %}
 
-    <article>
-        <header>{{ post.title }}</header>
-        <section>{{ post.text }}</section>
-    </article>
+<article>
+{% set asset = block.videoEmbed.first() %}
+{% set embed = craft.embeddedAssets.fromAsset(asset) %}
     
+{% if embed %}
+  {{ embed.safeHtml|raw }}
+{% endif %}
+    
+</article>
+
+<div>
+<header>SERMONS</h3>
+<h2>{{ sermon.title }}</h2>
+
+{% for preacher in entry.sermonPreacher.first() %}
+    <div>{{ preacher.title }}</div>
+{% endfor %}    
+
+<time>{{ sermon.postDate | date("m,d,Y") }}</time>
+    
+{% for series in entry.sermonSeries.first() %}
+    <p>From the series: {{ series.title }}</p>
+{% endfor %}
+</div>
     
     
 {% endblock %}
