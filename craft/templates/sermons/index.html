@@ -29,10 +29,10 @@
                   {% endif %}
                   <div class="sermon__info-text">                             
                       <h3 class="sermon__title">{{ sermon.title }}</h3>
-                      <p class="series__title">{{ series.title }}</p>
-                      {% for series in entry.sermonSeries.first() %}
-    <p>From the series: {{ series.title }}</p>
-{% endfor %}
+
+                    {% for series in entry.sermonSeries.first() %}
+                    <p class="series__title">{{ series.title }}</p>
+                    {% endfor %}
                   </div>
               </div>
           </div>
