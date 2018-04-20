@@ -1,4 +1,4 @@
-{% extends "_base.html" %}
+{% extends "_church_base.html" %}
 
 {% set entries = craft.entries({
     section: 'sermons',
@@ -11,11 +11,11 @@
 {% set image = relatedEntry.assetsField[0] ?? null %}
   <div class="col-sm-6">
       <a href="{{ sermon.url }}">
-          <div class="sermon__card ec-sermon sermon__has-series">
+          <div class="sermon__card sermon sermon__has-series">
               {% if image %}
                 <img class="sermon__post-thumbnail img-responsive lazy" 
-                     src="http://elevationchurch.org/wp-content/uploads/2017/02/tpot_v3.jpg" 
-                     data-original="http://elevationchurch.org/wp-content/uploads/2017/02/tpot_v3.jpg" 
+                     src="/uploads/2017/02/tpot_v3.jpg" 
+                     data-original="/uploads/2017/02/tpot_v3.jpg" 
                      width="960" height="540" 
                      style="display: block;">            
               {% endif %}
@@ -29,7 +29,7 @@
                   {% endif %}
                   <div class="sermon__info-text">                             
                       <h3 class="sermon__title">{{ sermon.title }}</h3>
-                      <p class="series__title">{{ sermon.title }}</p>
+                      <p class="series__title">{{ series.title }}</p>
                   </div>
               </div>
           </div>
