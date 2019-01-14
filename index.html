@@ -1,0 +1,141 @@
+{% extends "demo-church/_base-demoChurch.html" %}
+
+{% block head %}
+ {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+<section data-spy="scroll">
+
+<div class="ui-hero ui-hero-fp mb-0 js-revel" id="fp-about">
+
+    <div class="ui-bg-video">
+      <video autoplay loop muted preload>
+        <!-- <source src="http://www.excellencelab.com/development/video/concert-1630.mp4" type="video/mp4" /> !-->
+        <source src="http://www.excellencelab.com/development/video/broadplace_encoder.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="ui-bg-overlay"></div>
+
+    <div class="container ui-hero__content h-100">
+      <div class="row align-items-center h-100">
+          <div class="col-6 mx-auto">
+              <div class="text-center">
+                  <h1 class="text-uppercase ui-hero__heading text-white font-weight-light">Latest Sermon</h1>
+                  <p class="ui-hero__text text-white font-weight-light">The danger of postponing</p>
+       
+                  <button type="button" class="btn btn-square btn-large btn-outline-light text-uppercase">Learn more →</button>
+
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div class="ui-hero ui-hero-fp mb-0 js-revel" id="fp-sundays">
+
+    <div class="ui-bg-cover" data-depth="0.2" style="background-image: url(http://www.excellencelab.com/development/demo-church/images/worship-435108_1920.jpg);"></div>
+
+    <div class="ui-bg-overlay"></div>
+
+    <div class="container-fluid ui-hero__content h-100" data-depth="0.6">
+      <div class="row  h-100">
+          <div class="col-sm-8 col-lg-6 d-flex align-items-end">
+              <div class="p-md-5 m-md-5">
+                  <h3 class="ui-hero__heading text-light font-weight-light text-uppercase"><strong>INTERIOR DESIGN</strong></h3>
+                  <h1 class="ui-hero__heading text-marron font-weight-light display- text-uppercase">Our church gathers on Sundays at 9am & 11am.</h1>
+                  <p class="ui-hero__text text-light">All are welcome, and we would love to see you. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  <p class="ui-hero__text text-light font-weight-light">All are welcome, and we would love to see you. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="ui-hero ui-hero-fp mb-0 js-revel" id="fp-community">
+
+    <div class="ui-bg-cover" style="background-image: url(http://www.excellencelab.com/development/demo-church/images/bible-1149924_1920.jpg);"></div>
+
+    <div class="ui-bg-overlay"></div>
+
+    <div class="container ui-hero__content h-100">
+      <div class="row align-items-center h-100">
+          <div class="col-6 mx-auto">
+              <div class="text-center">
+                  <h1 class="ui-hero__heading text-white font-weight-light text-uppercase">Join us at any one of our many events.</h1>
+                  <p class="ui-hero__text font-weight-light">The danger of postponing</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div class="ui-hero ui-hero-fp mb-0 js-revel" id="fp-serve">
+
+    <div class="ui-bg-cover" style="background-image: url(http://www.excellencelab.com/development/demo-church/images/people-2590551_1920.jpg);"></div>
+
+
+    <div class="ui-bg-overlay"></div>
+
+    <div class="container ui-hero__content h-100">
+      <div class="row align-items-center h-100">
+          <div class="col-6 mx-auto">
+              <div class="text-center">
+                  <h1 class="ui-hero__heading text-light">Because we've been given so much, we love giving back..</h1>
+                  <p class="ui-hero__text text-light">The danger of postponing</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+<div class="ui-hero ui-hero-fp mb-0 js-revel" id="fp-events">
+
+
+  <div class="ui-bg-cover" style="background-image: url(http://www.excellencelab.com/development/demo-church/images/bible-1149924_1920.jpg);"></div>
+
+
+    <div class="ui-bg-overlay"></div>
+
+    <div class="container ui-hero__content h-100">
+      <div class="row align-items-center h-100">
+          <div class="col-6 mx-auto">
+              <div class="text-center">
+                  <h1 class="ui-hero__heading text-light">Join us at any one of our many events.</h1>
+                  <p class="ui-hero__text text-light">The danger of postponing</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</div>
+
+</section>
+
+
+<nav class="navbar navbar-dark bg-dark fixed-bottom m-4">
+
+  <a class="nav-link" href="#fp-about">About</a>
+  <a class="nav-link" href="#fp-sundays">Sundays</a>
+  <a class="nav-link" href="#fp-community">Community</a>
+  <a class="nav-link" href="#fp-serve">Serve</a>
+  <a class="nav-link" href="#fp-events">Events</a>
+
+</nav>
+
+
+
+{% endblock %}
